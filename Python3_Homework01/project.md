@@ -16,7 +16,7 @@ When they are working to your satisfaction, submit adder.py and test_adder.py.
 ##### Overall Comments:
 
 This is a good project in which to remove misconceptions about assertRaises.
-```
+```python3
         self.assertRaises(TypeError, adder, ("123", "456"))
 ```
 You are correct to just name the callable after the expected exception, with 
@@ -24,7 +24,7 @@ no arguments, but then should use individual arguments for adder, and not
 try to stuff everything in a tuple.  The above only succeeds in pass 
 ("123", "456") to x, the first parameter, and so raises a TypeError because
 of a wrong number of arguments, not because they are strings.  Rather, go:
-```
+```python3
         self.assertRaises(TypeError, adder, "123", "456")
 ```
 
