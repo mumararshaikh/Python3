@@ -1,7 +1,7 @@
 #### Python 3: The Python Environment
 ### Lesson 1, Project 1
 
-Here are your instructions:
+##### Here are your instructions:
 
 Create a Python3_Homework01 project and assign it to your Python3_Homework working set. 
 
@@ -13,7 +13,7 @@ Then, create a test_adder.py file that tests the correctness of this function.
 When they are working to your satisfaction, submit adder.py and test_adder.py.
 
 
-Overall Comments:
+##### Overall Comments:
 
 This is a good project in which to remove misconceptions about assertRaises.
 ```
@@ -24,8 +24,9 @@ no arguments, but then should use individual arguments for adder, and not
 try to stuff everything in a tuple.  The above only succeeds in pass 
 ("123", "456") to x, the first parameter, and so raises a TypeError because
 of a wrong number of arguments, not because they are strings.  Rather, go:
-
+```
         self.assertRaises(TypeError, adder, "123", "456")
+```
 
 This allows the callable to even have keyword arguments, and is why message=
 or any error message is not possible --
